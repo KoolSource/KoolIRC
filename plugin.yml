@@ -1,0 +1,42 @@
+name: CraftIRC
+main: com.ensifera.animosity.craftirc.CraftIRC
+authors: [Animosity, Protected]
+version: 3.1
+commands:
+  ircmsg:
+    description: Send message to tag
+    usage: /<command> [tag] [msg]
+    permission: craftirc.ircmsg
+  ircmsguser:
+    description: Send a message to a user
+    usage: /<command> [tag] [username] [msg]
+    permission: craftirc.ircmsguser
+  ircusers:
+    description: Lists online users
+    usage: /<command> [tag]
+    permission: craftirc.ircusers
+  admins!:
+    description: Sends a notice to admins on IRC
+    usage: /<command> [msg]
+    permission: craftirc.admins
+  ircraw:
+    description: Sends a raw line to IRC
+    usage: /<command> [botid] [rawirc]
+    permission: craftirc.ircraw
+  ircreload:
+    description: Reloads the plugin
+    usage: /<command>
+    permission: craftirc.ircreload
+permissions:
+  craftirc.ircmsg:
+    default: true
+  craftirc.ircmsguser:
+    default: true
+  craftirc.ircusers:
+    default: true
+  craftirc.admins:
+    default: true
+  craftirc.ircraw:
+    default: op
+  craftirc.ircreload:
+    default: op
